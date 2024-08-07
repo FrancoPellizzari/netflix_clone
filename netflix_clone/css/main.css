@@ -2,6 +2,17 @@ body, html {
     font-family: "Roboto", sans-serif;
     background-color: #141414;
     color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(20, 20, 20, 0.8);
 }
 
 .logo {
@@ -102,11 +113,39 @@ body, html {
     border-radius: 5px;
 }
 
+
+
 .hero{
-    position: absolute;
+    
     width: 100%;
     height: auto;
     display: block;
-    
-    
+}
+
+
+
+.carrusel {
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px 0;
+    background: #141414;
+    margin: 15px 1px 15px 1px;
+}
+
+.foto-peli {
+    min-width: 200px;
+    margin: 0 10px;
+}
+
+.foto-peli img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.foto-peli img {
+    width: 105%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 5px; 
 }
